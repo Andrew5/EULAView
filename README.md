@@ -1,2 +1,2 @@
-# EULAView
-简单实现了用户协议弹窗
+# EULAAlertView
+用户协议弹框View 

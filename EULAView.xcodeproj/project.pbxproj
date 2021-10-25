@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38311B162726732300DA7324 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B152726732300DA7324 /* AppDelegate.m */; };
+		38311B192726732300DA7324 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B182726732300DA7324 /* SceneDelegate.m */; };
+		38311B1C2726732300DA7324 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B1B2726732300DA7324 /* ViewController.m */; };
+		38311B1F2726732300DA7324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38311B1D2726732300DA7324 /* Main.storyboard */; };
+		38311B212726732600DA7324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38311B202726732600DA7324 /* Assets.xcassets */; };
+		38311B242726732600DA7324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38311B222726732600DA7324 /* LaunchScreen.storyboard */; };
+		38311B272726732600DA7324 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B262726732600DA7324 /* main.m */; };
+		38311B312726732600DA7324 /* EULAViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B302726732600DA7324 /* EULAViewTests.m */; };
+		38311B3B2726732600DA7324 /* EULAViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B3A2726732600DA7324 /* EULAViewUITests.m */; };
+		38311B3D2726732600DA7324 /* EULAViewUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B3C2726732600DA7324 /* EULAViewUITestsLaunchTests.m */; };
+		38311B4B2726756D00DA7324 /* EULAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B4A2726756D00DA7324 /* EULAAlertView.m */; };
+		38AB10EB27267F32006181F7 /* EULAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B4A2726756D00DA7324 /* EULAAlertView.m */; };
+		38AB10EC27267F59006181F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B1B2726732300DA7324 /* ViewController.m */; };
+		38AB10ED27267F9D006181F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B1B2726732300DA7324 /* ViewController.m */; };
+		38AB10EE27267FA0006181F7 /* EULAAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38311B4A2726756D00DA7324 /* EULAAlertView.m */; };
+		9FBB803909AB21F6049D9A3E /* libPods-EULAView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4A18199F569D39AE8A44E4 /* libPods-EULAView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38311B2D2726732600DA7324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38311B092726732300DA7324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38311B102726732300DA7324;
+			remoteInfo = EULAView;
+		};
+		38311B372726732600DA7324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38311B092726732300DA7324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38311B102726732300DA7324;
+			remoteInfo = EULAView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B18B2119CF8B2AFCF88456B /* Pods-EULAView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EULAView.release.xcconfig"; path = "Target Support Files/Pods-EULAView/Pods-EULAView.release.xcconfig"; sourceTree = "<group>"; };
+		38311B112726732300DA7324 /* EULAView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EULAView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38311B142726732300DA7324 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38311B152726732300DA7324 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38311B172726732300DA7324 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		38311B182726732300DA7324 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		38311B1A2726732300DA7324 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		38311B1B2726732300DA7324 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		38311B1E2726732300DA7324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38311B202726732600DA7324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38311B232726732600DA7324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38311B252726732600DA7324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38311B262726732600DA7324 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38311B2C2726732600DA7324 /* EULAViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EULAViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38311B302726732600DA7324 /* EULAViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EULAViewTests.m; sourceTree = "<group>"; };
+		38311B362726732600DA7324 /* EULAViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EULAViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38311B3A2726732600DA7324 /* EULAViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EULAViewUITests.m; sourceTree = "<group>"; };
+		38311B3C2726732600DA7324 /* EULAViewUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EULAViewUITestsLaunchTests.m; sourceTree = "<group>"; };
+		38311B492726756500DA7324 /* EULAAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EULAAlertView.h; sourceTree = "<group>"; };
+		38311B4A2726756D00DA7324 /* EULAAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EULAAlertView.m; sourceTree = "<group>"; };
+		ADFC869B69655C2194B1FA09 /* Pods-EULAView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EULAView.debug.xcconfig"; path = "Target Support Files/Pods-EULAView/Pods-EULAView.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4A18199F569D39AE8A44E4 /* libPods-EULAView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EULAView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38311B0E2726732300DA7324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FBB803909AB21F6049D9A3E /* libPods-EULAView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B292726732600DA7324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B332726732600DA7324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276EFFA82DA18B5ABC41136D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A18199F569D39AE8A44E4 /* libPods-EULAView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38311B082726732300DA7324 = {
+			isa = PBXGroup;
+			children = (
+				38311B132726732300DA7324 /* EULAView */,
+				38311B2F2726732600DA7324 /* EULAViewTests */,
+				38311B392726732600DA7324 /* EULAViewUITests */,
+				38311B122726732300DA7324 /* Products */,
+				4E7E85ACEB4E90DE6ECBC049 /* Pods */,
+				276EFFA82DA18B5ABC41136D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38311B122726732300DA7324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38311B112726732300DA7324 /* EULAView.app */,
+				38311B2C2726732600DA7324 /* EULAViewTests.xctest */,
+				38311B362726732600DA7324 /* EULAViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38311B132726732300DA7324 /* EULAView */ = {
+			isa = PBXGroup;
+			children = (
+				38311B142726732300DA7324 /* AppDelegate.h */,
+				38311B152726732300DA7324 /* AppDelegate.m */,
+				38311B172726732300DA7324 /* SceneDelegate.h */,
+				38311B182726732300DA7324 /* SceneDelegate.m */,
+				38311B1A2726732300DA7324 /* ViewController.h */,
+				38311B1B2726732300DA7324 /* ViewController.m */,
+				38311B492726756500DA7324 /* EULAAlertView.h */,
+				38311B4A2726756D00DA7324 /* EULAAlertView.m */,
+				38311B1D2726732300DA7324 /* Main.storyboard */,
+				38311B202726732600DA7324 /* Assets.xcassets */,
+				38311B222726732600DA7324 /* LaunchScreen.storyboard */,
+				38311B252726732600DA7324 /* Info.plist */,
+				38311B262726732600DA7324 /* main.m */,
+			);
+			path = EULAView;
+			sourceTree = "<group>";
+		};
+		38311B2F2726732600DA7324 /* EULAViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				38311B302726732600DA7324 /* EULAViewTests.m */,
+			);
+			path = EULAViewTests;
+			sourceTree = "<group>";
+		};
+		38311B392726732600DA7324 /* EULAViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38311B3A2726732600DA7324 /* EULAViewUITests.m */,
+				38311B3C2726732600DA7324 /* EULAViewUITestsLaunchTests.m */,
+			);
+			path = EULAViewUITests;
+			sourceTree = "<group>";
+		};
+		4E7E85ACEB4E90DE6ECBC049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC869B69655C2194B1FA09 /* Pods-EULAView.debug.xcconfig */,
+				2B18B2119CF8B2AFCF88456B /* Pods-EULAView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38311B102726732300DA7324 /* EULAView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38311B402726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAView" */;
+			buildPhases = (
+				42291A0323108E9C0D3EE668 /* [CP] Check Pods Manifest.lock */,
+				38311B0D2726732300DA7324 /* Sources */,
+				38311B0E2726732300DA7324 /* Frameworks */,
+				38311B0F2726732300DA7324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EULAView;
+			productName = EULAView;
+			productReference = 38311B112726732300DA7324 /* EULAView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38311B2B2726732600DA7324 /* EULAViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38311B432726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAViewTests" */;
+			buildPhases = (
+				38311B282726732600DA7324 /* Sources */,
+				38311B292726732600DA7324 /* Frameworks */,
+				38311B2A2726732600DA7324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38311B2E2726732600DA7324 /* PBXTargetDependency */,
+			);
+			name = EULAViewTests;
+			productName = EULAViewTests;
+			productReference = 38311B2C2726732600DA7324 /* EULAViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38311B352726732600DA7324 /* EULAViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38311B462726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAViewUITests" */;
+			buildPhases = (
+				38311B322726732600DA7324 /* Sources */,
+				38311B332726732600DA7324 /* Frameworks */,
+				38311B342726732600DA7324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38311B382726732600DA7324 /* PBXTargetDependency */,
+			);
+			name = EULAViewUITests;
+			productName = EULAViewUITests;
+			productReference = 38311B362726732600DA7324 /* EULAViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38311B092726732300DA7324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					38311B102726732300DA7324 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					38311B2B2726732600DA7324 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 38311B102726732300DA7324;
+					};
+					38311B352726732600DA7324 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 38311B102726732300DA7324;
+					};
+				};
+			};
+			buildConfigurationList = 38311B0C2726732300DA7324 /* Build configuration list for PBXProject "EULAView" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38311B082726732300DA7324;
+			productRefGroup = 38311B122726732300DA7324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38311B102726732300DA7324 /* EULAView */,
+				38311B2B2726732600DA7324 /* EULAViewTests */,
+				38311B352726732600DA7324 /* EULAViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38311B0F2726732300DA7324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38311B242726732600DA7324 /* LaunchScreen.storyboard in Resources */,
+				38311B212726732600DA7324 /* Assets.xcassets in Resources */,
+				38311B1F2726732300DA7324 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B2A2726732600DA7324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B342726732600DA7324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42291A0323108E9C0D3EE668 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EULAView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38311B0D2726732300DA7324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38311B1C2726732300DA7324 /* ViewController.m in Sources */,
+				38311B162726732300DA7324 /* AppDelegate.m in Sources */,
+				38311B272726732600DA7324 /* main.m in Sources */,
+				38311B192726732300DA7324 /* SceneDelegate.m in Sources */,
+				38311B4B2726756D00DA7324 /* EULAAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B282726732600DA7324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38AB10EE27267FA0006181F7 /* EULAAlertView.m in Sources */,
+				38AB10ED27267F9D006181F7 /* ViewController.m in Sources */,
+				38311B312726732600DA7324 /* EULAViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38311B322726732600DA7324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38AB10EB27267F32006181F7 /* EULAAlertView.m in Sources */,
+				38311B3D2726732600DA7324 /* EULAViewUITestsLaunchTests.m in Sources */,
+				38AB10EC27267F59006181F7 /* ViewController.m in Sources */,
+				38311B3B2726732600DA7324 /* EULAViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38311B2E2726732600DA7324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38311B102726732300DA7324 /* EULAView */;
+			targetProxy = 38311B2D2726732600DA7324 /* PBXContainerItemProxy */;
+		};
+		38311B382726732600DA7324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38311B102726732300DA7324 /* EULAView */;
+			targetProxy = 38311B372726732600DA7324 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38311B1D2726732300DA7324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38311B1E2726732300DA7324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38311B222726732600DA7324 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38311B232726732600DA7324 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38311B3E2726732600DA7324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		38311B3F2726732600DA7324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38311B412726732600DA7324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFC869B69655C2194B1FA09 /* Pods-EULAView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EULAView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		38311B422726732600DA7324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B18B2119CF8B2AFCF88456B /* Pods-EULAView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EULAView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		38311B442726732600DA7324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EULAView.app/EULAView";
+			};
+			name = Debug;
+		};
+		38311B452726732600DA7324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EULAView.app/EULAView";
+			};
+			name = Release;
+		};
+		38311B472726732600DA7324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EULAView;
+			};
+			name = Debug;
+		};
+		38311B482726732600DA7324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.EULAViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EULAView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38311B0C2726732300DA7324 /* Build configuration list for PBXProject "EULAView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38311B3E2726732600DA7324 /* Debug */,
+				38311B3F2726732600DA7324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38311B402726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38311B412726732600DA7324 /* Debug */,
+				38311B422726732600DA7324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38311B432726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38311B442726732600DA7324 /* Debug */,
+				38311B452726732600DA7324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38311B462726732600DA7324 /* Build configuration list for PBXNativeTarget "EULAViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38311B472726732600DA7324 /* Debug */,
+				38311B482726732600DA7324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38311B092726732300DA7324 /* Project object */;
+}
