@@ -43,7 +43,7 @@
         make.left.equalTo(self.backgroundView).offset(47);
         make.right.equalTo(self.backgroundView).mas_equalTo(-47);
         make.centerY.equalTo(self.backgroundView);
-        make.height.mas_equalTo(280);
+        make.height.mas_equalTo(300);
     }];
     
     //不同意按钮
@@ -134,7 +134,12 @@
         make.bottom.equalTo(contentDView).mas_equalTo(-60);
     }];
     
-    NSMutableAttributedString *mastring = [[NSMutableAttributedString alloc] initWithString:str attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f],NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = 2;     //行间距
+    NSMutableAttributedString *mastring = [[NSMutableAttributedString alloc] initWithString:str attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f],NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraphStyle}];
+
+    
     [mastring beginEditing];
     [mastring addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:range2];
     [mastring addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:range3];

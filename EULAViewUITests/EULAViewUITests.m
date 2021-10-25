@@ -28,7 +28,8 @@
 //不知道为什么不能做UI测试？
 - (void)testClick{
 //    [[[[[[[XCUIApplication alloc] init].windows childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element tap];
-                                            
+    XCUIApplication *app = [[XCUIApplication alloc]init];
+    [app.buttons[@"点击"] tap];
                         
 }
 - (void)testExample {
