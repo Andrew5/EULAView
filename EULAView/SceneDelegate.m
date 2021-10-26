@@ -22,9 +22,14 @@
         UIWindowScene *windowScene = (UIWindowScene *)scene;
         self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
         self.window.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-        [self addUserNegotiateView];        
+        if (![[NSUserDefaults standardUserDefaults] objectForKey:@"firstValue"] ) {//NO
+            [self addUserNegotiateView];
+        }else{
+            self.window.rootViewController = [ViewController new];
+        }
         [self.window makeKeyAndVisible];
     }
+
     
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
@@ -33,6 +38,7 @@
 - (void)addUserNegotiateView{
     EULAAlertView*alertView = [[EULAAlertView alloc]initWithFrame:self.window.bounds];
     [self.window addSubview:alertView];
+
     alertView.selectedData = ^(BOOL model) {
         if (model) {
             self.window.rootViewController = [ViewController new];
