@@ -24,8 +24,8 @@
 - (void)setupView{
     //背景
     self.backgroundView = [[UIButton alloc]init];
-    UIColor *color = [UIColor colorWithRed:18/255.0 green:18/255.0 blue:18/255.0 alpha:1.0];
-    self.backgroundView.backgroundColor = [color colorWithAlphaComponent:1.0];
+    UIColor *color = [UIColor whiteColor];//[UIColor colorWithRed:18/255.0 green:18/255.0 blue:18/255.0 alpha:1.0];
+    self.backgroundView.backgroundColor = [color colorWithAlphaComponent:0.7];
     [self addSubview:self.backgroundView];
     [self.backgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).mas_equalTo(0);
@@ -40,18 +40,21 @@
     contentDView.layer.cornerRadius = 16;
     [self.backgroundView addSubview:contentDView];
     [contentDView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.backgroundView).offset(47);
-        make.right.equalTo(self.backgroundView).mas_equalTo(-47);
-        make.centerY.equalTo(self.backgroundView);
-        make.height.mas_equalTo(300);
+//        make.left.equalTo(self.backgroundView).offset(47);
+//        make.right.equalTo(self.backgroundView).mas_equalTo(-47);
+//        make.centerY.equalTo(self.backgroundView);
+//        make.height.mas_equalTo(300);
+        make.centerX.equalTo(self.backgroundView.mas_centerX);
+        make.centerY.equalTo(self.backgroundView.mas_centerY).mas_equalTo(-20);
+        make.size.mas_equalTo(CGSizeMake(282, 308));
     }];
     
     //不同意按钮
     UIButton *disagree = [[UIButton alloc]init];
-    disagree.backgroundColor = UIColor.whiteColor;
+    disagree.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:246/255.0 alpha:1.0];
     [disagree setTitle:@"不同意并退出" forState:UIControlStateNormal];
+    [disagree setTitleColor:[UIColor colorWithRed:155/255.0 green:153/255.0 blue:169/255.0 alpha:1.0] forState:UIControlStateNormal];
     disagree.titleLabel.font = [UIFont systemFontOfSize:14];
-    [disagree setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     disagree.layer.cornerRadius = 20;
     [disagree addTarget:self action:@selector(clickdisagree) forControlEvents:(UIControlEventTouchUpInside)];
     [contentDView addSubview:disagree];
@@ -69,7 +72,7 @@
     [agree mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(contentDView).mas_equalTo(-16);
         make.left.equalTo(disagree.mas_right).mas_equalTo(11);
-        make.bottom.equalTo(contentDView).mas_equalTo(-14);
+        make.bottom.equalTo(contentDView).mas_equalTo(-24);
         make.width.equalTo(disagree);
         make.height.mas_equalTo(38);
     }];
@@ -78,7 +81,7 @@
     [disagree mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(contentDView).mas_equalTo(15);
         make.right.equalTo(agree.mas_left).mas_equalTo(-11);
-        make.bottom.equalTo(contentDView).mas_equalTo(-14);
+        make.bottom.equalTo(contentDView).mas_equalTo(-24);
         make.width.equalTo(agree);
         make.height.mas_equalTo(38);
     }];
@@ -91,7 +94,7 @@
     [contentDView addSubview:titleDLabel];
     [titleDLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(contentDView).mas_equalTo(16);
-        make.top.equalTo(contentDView).mas_equalTo(14);
+        make.top.equalTo(contentDView).mas_equalTo(10);
         make.width.mas_equalTo(20*9);
         make.height.mas_equalTo(30);
     }];
@@ -136,7 +139,7 @@
     
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineSpacing = 2;     //行间距
+    paragraphStyle.lineSpacing = 5;     //行间距
     NSMutableAttributedString *mastring = [[NSMutableAttributedString alloc] initWithString:str attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f],NSForegroundColorAttributeName:[UIColor blackColor],NSParagraphStyleAttributeName:paragraphStyle}];
 
     
@@ -193,6 +196,7 @@
 - (void)clickRemove{
     [self removeAlertView];
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstValue"];
+    self.selectedData(YES);
 
 }
 //不同意
@@ -200,7 +204,8 @@
     [self removeAlertView];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"firstValue"];
     NSLog(@"退出程序");
-//    abort();
+    self.selectedData(NO);
+    exit(0);
 }
 
 /*
